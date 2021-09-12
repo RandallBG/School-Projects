@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+.page {
+  width: 100%;
+  background-color: white;
+  margin: 0em auto 0em auto;
+  padding: 1em;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.pageTitle {
+  font-weight: 100;
+  font-size: 38px;
+  margin-top: 0;
+}
+
+.secondaryTitle {
+  font-style: bold;
+}
+
+.footer {
+  margin-top: 0;
+  font-style: bold;
+  margin-bottom: 3em;
+}
+
+.youtubeImg {
+  width: 20%;
+}
+
+.bolden {
+  font-weight: bold;
+}
+hr {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .page {
+    width: 900px;
+    padding: 3em 10em 3em 10em;
+  }
+}

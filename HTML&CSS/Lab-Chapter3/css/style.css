@@ -2,9 +2,15 @@
 *{
     box-sizing: border-box;
 }
+
+body{
+    background-color: #333;
+}
 .mainWrapper{
-    width:80vw;
+    width:50vw;
     margin: 0 auto;
+    padding: 3em 5em 3em 5em;
+    background-color:white;
 }
 .mainTitle{
     color:red;
@@ -48,4 +54,26 @@ p{
 
 .textCenter{
     text-align: center;
+}
+
+@media only screen and (max-width:1350px){
+    .mainWrapper{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .mainWrapper{
+        width:70vw;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .mainWrapper{
+        width:100%;
+        padding: 3em 1em 3em 1em;
+    }
+    .box{
+        width: 100%;
+    }
 }

@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+.mainWrapper{
+    width:80vw;
+    margin: 0 auto;
+}
+.mainTitle{
+    color:red;
+    text-align:center;
+}
+.bolden{
+    
+    font-weight:bold;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.box{
+    padding:0;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.highlight{
+    background-color:grey;
+}
+
+#USImg{
+    width: 30%;
+    float:left;
+    padding: 10px;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.textCenter{
+    text-align: center;
+}

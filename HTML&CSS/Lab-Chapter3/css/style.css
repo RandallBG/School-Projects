@@ -10,6 +10,13 @@
     color:red;
     text-align:center;
 }
+
+.flushTitle{
+    margin-bottom:0;
+}
+p{
+    margin-top:0;
+}
 .bolden{
     
     font-weight:bold;
@@ -20,6 +27,7 @@
 }
 .box{
     padding:0;
+    margin-top:0;
     border: 1px solid black;
     width: 50%;
 }

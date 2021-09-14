@@ -11,6 +11,7 @@ body{
     margin: 0 auto;
     padding: 3em 5em 3em 5em;
     background-color:white;
+    text-align: justify;
 }
 .mainTitle{
     color:red;
@@ -36,6 +37,7 @@ p{
     margin-top:0;
     border: 1px solid black;
     width: 50%;
+    text-align: justify;
 }
 
 .highlight{

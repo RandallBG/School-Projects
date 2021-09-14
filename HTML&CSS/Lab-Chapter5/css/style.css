@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/bg-pattern.jpg");
+    background-repeat: repeat;
+}
+#pageWrapper{
+    width: 75vw;
+    margin: 0 auto;
+    background-color:white;
+    padding: 1em 3em 1em 3em;
+}
+
+#headingImg{
+    width:100%;
+}
+
+#presList{
+    display:inline-block;
+    text-align: left;
+}
+
+#presList li{
+}
+
+#listWrapper{
+    text-align: center;
+}
+.presTable{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.presTable, td{
+    border: 1px solid black;
+
+}
+
+.presTable td{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.presTable tr{
+    display:flex;
+}
+
+ul li{
+    list-style-image: url("../images/pres-seal-sm.jpg");
+    list-style-position: outside;
+}
+
+@media only screen and (max-width: 1100px){
+    .presTable tr{
+        flex-direction: column;
+    }
+}

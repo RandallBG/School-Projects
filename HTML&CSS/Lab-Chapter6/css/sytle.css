@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.formHolder{
+    width: 50%;
+    height: 40vh;
+    border-radius: 20px;
+    margin:0 auto;
+    background-color:#333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    background-color:white;
+}

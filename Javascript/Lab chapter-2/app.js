@@ -8,15 +8,15 @@ const GOLDENRATIO = 1.618034;
 
 if(length > 3)
 {
-    for(var i=1; i < length; i++)
+    for(var i=2; i < length; i++)
     {
-        fibSequence[i + 1] = (fibSequence[i-1] + fibSequence[i]);   
+        fibSequence[i] = (fibSequence[i-2] + fibSequence[i-1]);   
     }
 
     for(var x=0; x < fibSequence.length; x++)
     {
         document.write("<div class='numberBox'>");
-        document.write(`${x}: ${fibSequence[x]}`);
+        document.write(`${x + 1}: ${fibSequence[x]}`);
         document.write("</div>");
     }
 

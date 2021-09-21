@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#333;
+    color:white;
+}
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoWrapper{
+    background-color: blue;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 1% 0;
+    
+}
+
+
+.audioWrapper{
+    background-color: red;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.audioCard{
+    background-color:white;
+    color:black;
+    text-align: justify;
+    margin: 1%;
+    padding: 2%;
+}
+.audioCard h3{
+    text-align: center;
+}
+.audioCard p{
+    margin-bottom: 1em;
+}
+
+.audioCard audio{
+    width: 100%;
+}
+
+
+.wrapper img{
+    width: 100%;
+    padding: 5%;
+}
+
+.videoCard{
+    width: 70%;
+    background-color:#efefef;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    color:black;
+}
+
+.videoCard h1{
+    margin: 2%;
+    text-align: center;
+    width: 100%;
+}

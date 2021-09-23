@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<title>Lab 3 - Functions & Working with HTML</title>
+	<script>
+		"use strict";
+		window.onload = function () {
+			document.getElementById("goCalculate").onclick = calculate;
+
+		}
+
+		let factorial = (maxNum) => {
+			var fact = 1;
+			if (maxNum < 0) {
+				document.getElementById("errorMsg").style.display = "inline";
+				return;
+			} else {
+				document.getElementById("errorMsg").style.display = "none";
+				for (var i = 1; i <= maxNum; i++) {
+					fact *= i;
+					return fact;
+				}
+
+			}
+		}
+		let calculate = () => {
+			var userNum = document.getElementById("myNum").value;
+			var mySquare = userNum * userNum;
+			document.getElementById("mySquare").value = mySquare;
+			document.getElementById("myFactorial").value = factorial(userNum);
+		}
+	</script>
+	<style>
+		.errorMsg {
+			color: red;
+			font-weight: bold;
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h2 id="header">Enter a Number for Calculation</h2>
+		<h3 class="errorMsg" id="errorMsg">Please Use Positive numbers</h3>
+		<label for="myNum">My Number Is:</label>
+		<input type="text" id="myNum"><br>
+		<br />
+		<!-- display the squre here -->
+		<label for="mySquare">My Number Squared:</label>
+		<input type="text" id="mySquare" disabled><br>
+		<br />
+		<!-- display the factorial here -->
+		<label for="">My Factorial</label>
+		<input type="text" id="myFactorial" disabled><br>
+		<br />
+		<label>&nbsp;</label>
+		<input type="button" id="goCalculate" value="GO"><br>
+	</main>
+</body>
+
+</html>

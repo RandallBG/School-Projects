@@ -18,29 +18,44 @@
          var d = new Date();
 
          // get the piece parts of the date and time
-         var dayOfWeek;
+         var monthOfYear;
 
-         switch (d.getDay()) {
+         switch (d.getMonth()) {
             case 0:
-               dayOfWeek = "Sunday";
+               monthOfYear = "January";
                break;
             case 1:
-               dayOfWeek = "Monday";
+               monthOfYear = "February";
                break;
             case 2:
-               dayOfWeek = "Tuesday";
+               monthOfYear = "March";
                break;
             case 3:
-               dayOfWeek = "Wednesday";
+               monthOfYear = "April";
                break;
             case 4:
-               dayOfWeek = "Thursday";
+               monthOfYear = "May";
                break;
             case 5:
-               dayOfWeek = "Friday";
+               monthOfYear = "June";
                break;
             case 6:
-               dayOfWeek = "Saturday";
+               monthOfYear = "July";
+               break;
+            case 7:
+               monthOfYear = "August";
+               break;
+            case 8:
+               monthOfYear = "September";
+               break;
+            case 9:
+               monthOfYear = "October";
+               break;
+            case 10:
+               monthOfYear = "November";
+               break;
+            case 11:
+               monthOfYear = "December";
                break;
          }
          var today = d.getDate();
@@ -65,7 +80,7 @@
          var upperCase = myText.toUpperCase();
          // update the screen with all the variables you just created
          // myDate
-         document.getElementById("myDate").innerText = `${month}/${today}/${year}`;
+         document.getElementById("myDate").innerText = `${monthOfYear}/${today}/${year}`;
          // myTime
          document.getElementById("myTime").innerText = `${hour}:${minute}:${second} ${AmPmSwitch}`;
          // charCount

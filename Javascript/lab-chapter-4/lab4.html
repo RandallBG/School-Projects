@@ -70,9 +70,9 @@
          // add some logic to dertermine if it is AM or PM
          // also think about if it is 12:15 midnight - what will the hour look like?
          if (hour > 11) {
-            AmPmSwitch = "PM"
+            AmPmSwitch = "PM";
          } else {
-            AmPmSwitch = "AM"
+            AmPmSwitch = "AM";
          }
          //count the chars in text 
          var charCount = myText.replace(/\s/g, '').length;
@@ -80,6 +80,7 @@
          var upperCase = myText.toUpperCase();
          // update the screen with all the variables you just created
          // myDate
+
          document.getElementById("myDate").innerText = `${monthOfYear}/${today}/${year}`;
          // myTime
          document.getElementById("myTime").innerText = `${hour}:${minute}:${second} ${AmPmSwitch}`;

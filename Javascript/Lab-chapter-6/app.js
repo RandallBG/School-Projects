@@ -16,11 +16,11 @@ let validateForm = () =>{
             //if the item is not empty continue
             if(collection[i].value != "")
             {
-                continue;
+
                 //if the element is empty but is for spouse name and form is set to single continue
             }else if(collection[i].id === "sname" && document.getElementById("mstatus").value === "Single")
             {
-                continue;
+                
                 //else add error class to empty fields and set isValidated to false
             }else
             {

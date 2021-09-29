@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+	<style>
+		.numberKey {
+			width: 150px;
+			height: 125px;
+			background: #285DC8;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+
+		div.numberKey:hover {
+			background: #487DE8;
+		}
+
+		.actionKey {
+			width: 150px;
+			height: 125px;
+			background: #285DC8;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+
+		div.actionKey:hover {
+			background: #487DE8;
+		}
+
+		.equalKey {
+			width: 150px;
+			height: 125px;
+			background: #285DC8;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+
+		div.equalKey:hover {
+			background: #487DE8;
+		}
+
+		.blankKey {
+			width: 150px;
+			height: 125px;
+			background: #285DC8;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+
+		.disableKey {
+			width: 150px;
+			height: 125px;
+			background: #777777;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+
+		.answerDisplay {
+			width: 610px;
+			height: 125px;
+			background: #285DC8;
+			color: #FFFF00;
+			font-size: 48px;
+			font-weight: bold;
+			padding-top: 25px;
+			text-align: center
+		}
+	</style>
+	<script>
+		"use strict"
+		var keyStr = "";
+
+		function cClick(cKey) {
+			keyStr += cKey;
+			// *** display the number (keyStr) in the "display" area 
+			document.getElementById("display").innerText = keyStr;
+			// turn the key they clicked gray (inactive) class="disableKey"
+			document.getElementById(cKey).classList.add("disableKey");
+			document.getElementById(cKey).classList.remove("numberKey");
+		}
+		function resetDisplay() {
+			// get a hold of the display area and clear the HTML
+			document.getElementById("display").innerText = "";
+			// any keys that were disabled - set them back to active 
+			let disabledElements = Array.from(document.getElementsByClassName("disableKey"));
+
+			for (let i = 0; i < disabledElements.length; i++) {
+				// class = "numberKey"
+				disabledElements[i].classList.remove("disableKey");
+				disabledElements[i].classList.add("numberKey");
+
+			}
+
+			// reset keyStr variable.
+			keyStr = "";
+		}
+	</script>
+</head>
+
+<body>
+	<h2>LabB</h2>
+	<table>
+		<tr>
+			<td colspan="4">
+				<div class="answerDisplay" id="display">0</div>
+			</td>
+		</tr>
+		<tr></tr>
+		<td>
+			<div class="numberKey" id="7" onclick="cClick(7)">7</div>
+		</td>
+		<td>
+			<div class="numberKey" id="8" onclick="cClick(8)">8</div>
+		</td>
+		<td>
+			<div class="numberKey" id="9" onclick="cClick(9)">9</div>
+		</td>
+		<td>
+			<div class="actionKey" id="plus" onclick="cClick('+')">+</div>
+		</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="numberKey" id="4" onclick="cClick(4)">4</div>
+			</td>
+			<td>
+				<div class="numberKey" id="5" onclick="cClick(5)">5</div>
+			</td>
+			<td>
+				<div class="numberKey" id="6" onclick="cClick(6)">6</div>
+			</td>
+			<td>
+				<div class="actionKey" id="minus" onclick="cClick('-')">-</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="numberKey" id="1" onclick="cClick(1)">1</div>
+			</td>
+			<td>
+				<div class="numberKey" id="2" onclick="cClick(2)">2</div>
+			</td>
+			<td>
+				<div class="numberKey" id="3" onclick="cClick(3)">3</div>
+			</td>
+			<td>
+				<div class="actionKey" id="multiply" onclick="cClick('*')">X</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="blankKey" id="reset" onclick="resetDisplay()">Reset</div>
+			</td>
+			<td>
+				<div class="numberKey" id="0" onclick="cClick(0)">0</div>
+			</td>
+			<td>
+				<div class="equalKey" id="equal" onclick="cClick('=')">=</div>
+			</td>
+			<td>
+				<div class="actionKey" id="divide" onclick="cClick('/')">/</div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

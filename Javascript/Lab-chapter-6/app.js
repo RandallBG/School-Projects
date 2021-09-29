@@ -1,7 +1,5 @@
 
-window.onload() = function() {
-    alert("hello");
-}
+
 
 let validateForm = () =>{
     //create an array of form inputs
@@ -53,10 +51,7 @@ let validateForm = () =>{
         document.getElementById("password2").classList.add("error");
     }
     //if all checks panned out and isValidated is still true submit the form
-    if(!isValidated)
-    {
-       return false;
-    }
+    return isValidated;
 }
 
 //function to grey out spouse name if single

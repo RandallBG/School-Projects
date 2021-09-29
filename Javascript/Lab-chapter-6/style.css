@@ -35,3 +35,27 @@ fieldset > input{
 
 
 
+@media screen and (max-width: 1000px)
+{
+    form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .formHolder{
+        width: 100%;
+    }
+
+    fieldset{
+        width:75%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    fieldset{
+        width: 90%;
+    }
+}

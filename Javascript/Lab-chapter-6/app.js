@@ -20,7 +20,7 @@ let validateForm = () =>{
                 //if the element is empty but is for spouse name and form is set to single continue
             }else if(collection[i].id === "sname" && document.getElementById("mstatus").value === "Single")
             {
-                
+
                 //else add error class to empty fields and set isValidated to false
             }else
             {
@@ -36,7 +36,7 @@ let validateForm = () =>{
     //see if one of them are checked
     if(gender[0].checked == true || gender[1].checked == true)
     {
-        //if not throw error
+        //if not add error class
     }else{
         document.getElementById("genderContainer").classList.add("error");
     }
@@ -44,7 +44,7 @@ let validateForm = () =>{
     //check to see if passwords match
     if(document.getElementById("password").value === document.getElementById("password2").value)
     {
-        //throw error if not
+        //add error if not
     }else{
         isValidated = false;
         document.getElementById("password").classList.add("error");

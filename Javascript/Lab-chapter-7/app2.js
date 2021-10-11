@@ -9,7 +9,7 @@ let findPrimes = () =>{
 
     for(let i=3; i < maxPrimes; i+=2)
     {
-        for(let j=3; j < Math.sqrt(i); j++)
+        for(let j=3; j < Math.ceil(Math.sqrt(i)); j++)
         {
             if(i%j == 0)
             {

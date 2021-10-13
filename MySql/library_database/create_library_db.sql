@@ -20,7 +20,7 @@ CREATE TABLE books
 	isbn		INT PRIMARY KEY,
     title		VARCHAR(100),
     author		VARCHAR(100),
-    book_desc   VARCHAR(200)
+    book_desc   VARCHAR(1000)
 );
 
 CREATE TABLE genre
@@ -52,13 +52,14 @@ VALUES 	(DEFAULT, "Guest", NULL, "GUEST@gmail.com", "Guest", "password"),
 		(DEFAULT, "Randall", "Gosnell", "Randall.bg.gosnell@gmail.com", "JustRandall", "password");
         
 INSERT INTO books 
-VALUES  (0345391802, "The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "After Earth is demolished to make way for a new hyperspatial expressway, Arthur Dent begins to hitch-hike through space.");
-
+VALUES  (0345391802, "The Hitchhiker's Guide to the Galaxy", "Douglas Adams", "After Earth is demolished to make way for a new hyperspatial expressway, Arthur Dent begins to hitch-hike through space."),
+		(0544003415, "The Lord of the Rings", "J.R.R. Tolkien", "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.");
+        
 INSERT INTO genre
 VALUES (DEFAULT, "Fiction"),(DEFAULT, "Non-Fiction"),(DEFAULT, "Comedy"), (DEFAULT, "Horror"),(DEFAULT, "Fantasy"),(DEFAULT, "Science Fiction"), (DEFAULT, "Action"), (DEFAULT, "Mystery");
 
 INSERT INTO book_genres
-VALUE (0345391802, 3), ("0345391802", 6);
+VALUE (0345391802, 3), ("0345391802", 6),(0544003415, 5), (0544003415, 2);
 
 
 INSERT INTO checkout_records

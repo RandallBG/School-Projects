@@ -1,3 +1,5 @@
+use library;
+
 DELIMITER //
 
 CREATE TRIGGER verify_isbn 

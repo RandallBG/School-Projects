@@ -20,7 +20,8 @@ CREATE TABLE books
 	isbn		BIGINT PRIMARY KEY,
     title		VARCHAR(100)  NOT NULL,
     book_type	VARCHAR(50)   NOT NULL,
-    book_desc   VARCHAR(1000) NOT NULL
+    book_desc   VARCHAR(1000) NOT NULL,
+    image_index INT      
 	
 );
 
@@ -64,11 +65,11 @@ VALUES 	(DEFAULT, "Guest", "Guest", "GUEST@gmail.com", "Guest", "password"),
 		(DEFAULT, "Randall", "Gosnell", "RandallG@gmail.com", "RandallG", "password");
         
 INSERT INTO books 
-VALUES  (9780307291813, "The Hitchhiker's Guide to the Galaxy", "paperback", "After Earth is demolished to make way for a new hyperspatial expressway, Arthur Dent begins to hitch-hike through space."),
-		(9780547928210, "The Lord of the Rings","paperback", "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins."),
-        (9781250832375, "The Eye of the World(The Wheel of Time Book One)", "paperback", "When she arrives in a small village in the Two Rivers, Moiraine discovers three young men, each of whom might be the long-awaited and reviled Chosen One, the Dragon Reborn. But she is not the only stranger new to the village, nor the only one searching. In a race against time and the agents of the Shadow, she must guide her charges through lands of myth and legend. toward allies both new and old, and into the footsteps of prophecy."),
+VALUES  (9780307291813, "The Hitchhiker's Guide to the Galaxy", "paperback", "After Earth is demolished to make way for a new hyperspatial expressway, Arthur Dent begins to hitch-hike through space.",1),
+		(9780547928210, "The Lord of the Rings","paperback", "In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, the Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell by chance into the hands of the hobbit Bilbo Baggins.",2),
+        (9781250832375, "The Eye of the World(The Wheel of Time Book One)", "paperback", "When she arrives in a small village in the Two Rivers, Moiraine discovers three young men, each of whom might be the long-awaited and reviled Chosen One, the Dragon Reborn. But she is not the only stranger new to the village, nor the only one searching. In a race against time and the agents of the Shadow, she must guide her charges through lands of myth and legend. toward allies both new and old, and into the footsteps of prophecy.",3),
         (9780553381689, 'A Game of Thrones (Song of Ice and Fire)', "paperback",
-			'Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.');
+			'Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.',4);
 	
 INSERT INTO authors
 VALUES (default, "Douglas Adams"), (default, "J.R.R. Tolkien" ), (default, "Robert Jordan"), (default, "George R.R. Martin");

@@ -12,7 +12,7 @@ while number != -999:
             maximum = number
         if number < minimum :
             minimum = number
-        if number > maximum:g
+        if number > maximum:
             maximum = number    
         numberArr.append(number)
 

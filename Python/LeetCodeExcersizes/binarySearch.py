@@ -18,8 +18,12 @@ def searchNumArray(nums, target):
         if nums[mid] == target:
             return mid
     
-    return -1
-    
+    # return -1
+    # return the place it would be in the array
+    if(nums[mid] > target):
+        return mid-1
+    else:
+        return mid+1
 numsArray = [-1, 0, 5, 7, 10, 15, 20, 90]
 
 # print(numsArray[1:2])

@@ -1,9 +1,6 @@
 def stringToTuple(stringToConvert):
-    for i in range(0,len(stringToConvert)):
-        result = tuple(map(tuple, stringToConvert))
-        
-    return result
+    return tuple(map(tuple,stringToConvert))
 
 
-name = "cleveland codes"
+name = input("enter a string: ")
 print(stringToTuple(name))

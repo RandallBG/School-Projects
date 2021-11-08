@@ -1,19 +1,3 @@
-# def rotateArray(nums, k):
-
-#     x = 0
-#     while x < k:
-#         print(x, k)
-#         for i in range(len(nums)-1, -1, -1):  
-#             print(i)
-#             if i+1 > len(nums)-1:
-#                 tmp = nums[i]
-                    
-#             nums[i] = nums[i-1] 
-                
-#             if i == 0:
-#                 nums[i] = tmp
-                    
-#     x += 1
 
 
 def rotateArray(nums, k):

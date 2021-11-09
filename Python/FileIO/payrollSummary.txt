@@ -1,0 +1,15 @@
+Payroll Date: 11/08/21
+Start Time: 18:22:12
+End Time: 18:22:12
+Records Processed: 996
+Total Payout: 583986.60
+Payroll Date: 11/08/21
+Start Time: 18:28:36
+End Time: 18:28:36
+Records Processed: 996
+Total Payout: 583986.60
+Payroll Date: 11/08/21
+Start Time: 18:30:58
+End Time: 18:30:58
+Records Processed: 996
+Total Payout: 583986.60
